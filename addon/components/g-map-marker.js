@@ -133,7 +133,7 @@ const GMapMarkerComponent = Ember.Component.extend({
     const icon = this.get('icon');
 
     if (isPresent(marker) && isPresent(icon)) {
-      marker.setIcon({url: icon, size: new google.maps.Size(20, 20),});
+      marker.setIcon({url: icon, scaledSize: new new google.maps.Size(22, 22)});
     }
   },
 
